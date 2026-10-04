@@ -1,0 +1,28 @@
+===== C4D 本地运行证明 =====
+生成时间: 2026-10-04 13:43:22
+
+--- 设备信息 ---
+机型: Mac mini Mac16,10
+芯片: Apple M4 (10 核 CPU, 10 核 GPU)
+内存: 16 GB
+系统: macOS 26.5.2
+
+--- 运行工具 ---
+ollama version is 0.35.1
+
+--- 已下载模型 ---
+NAME          ID              SIZE      MODIFIED      
+gemma4:e4b    dc35e8d9c606    6.6 GB    3 minutes ago    
+
+--- 模型运行状态（100% GPU = 完全本地推理） ---
+NAME          ID              SIZE      PROCESSOR    CONTEXT    UNTIL              
+gemma4:e4b    dc35e8d9c606    276 MB    100% GPU     4096       4 minutes from now    
+
+--- Level 1 推理性能 ---
+模型: gemma4:e4b | 总耗时 31.20s | 453 tokens | 18.67 tok/s
+
+--- Level 2 Agent 各步推理性能 ---
+步骤1 规划:   32.71s | 23.39 tok/s
+步骤2 生成:   60.50s | 27.96 tok/s
+步骤3 校验:   所有坐标在合理范围内，无需修正
+步骤4 渲染:   Folium 生成 wcy_C4D_map.html，8 个标记点

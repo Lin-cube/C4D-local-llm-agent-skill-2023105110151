@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f200430720085cb5eef8547f12afd25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style='position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:9999;background:white;padding:8px 16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.3);font-size:16px;font-weight:bold;'>郑州西亚斯学院（SIAS University）周边地图 · 由本地 Gemma 4 Agent 生成</div>
+    
+            <div class="folium-map" id="map_5f200430720085cb5eef8547f12afd25" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f200430720085cb5eef8547f12afd25 = L.map(
+                "map_5f200430720085cb5eef8547f12afd25",
+                {
+                    center: [34.399875, 113.732625],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_07ac37a6c420b70dcc85e2c147664315 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_07ac37a6c420b70dcc85e2c147664315.addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var marker_af24043aaf6037c581cb22a003053e67 = L.marker(
+                [34.405, 113.735],
+                {
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var icon_16f5b013f28cc659188e16c179d263c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91e47203744403edbed841acfd622a0a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1237f8294280a04ceda6f3f56bb14d79 = $(`<div id="html_1237f8294280a04ceda6f3f56bb14d79" style="width: 100.0%; height: 100.0%;"><b>教学主楼</b> <span style='color:gray'>(Main Academic Building)</span><br>类别：教学<br>坐标：34.40500, 113.73500<br>核心教学场所，提供各类课程和研讨空间。</div>`)[0];
+                popup_91e47203744403edbed841acfd622a0a.setContent(html_1237f8294280a04ceda6f3f56bb14d79);
+            
+        
+
+        marker_af24043aaf6037c581cb22a003053e67.bindPopup(popup_91e47203744403edbed841acfd622a0a)
+        ;
+
+        
+    
+    
+            marker_af24043aaf6037c581cb22a003053e67.bindTooltip(
+                `<div>
+                     教学主楼
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_af24043aaf6037c581cb22a003053e67.setIcon(icon_16f5b013f28cc659188e16c179d263c9);
+            
+    
+            var marker_69a210c757a8a12f0a776093ac7fd844 = L.marker(
+                [34.402, 113.732],
+                {
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var icon_a936f8c06fbbcf39f884b3dc6d691d80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9751756a824b24e18a8d2747f6e9f68 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f3213788798f569d879816feca81455d = $(`<div id="html_f3213788798f569d879816feca81455d" style="width: 100.0%; height: 100.0%;"><b>图书馆</b> <span style='color:gray'>(Campus Library)</span><br>类别：生活<br>坐标：34.40200, 113.73200<br>知识宝库，提供阅读、学习和研究资源。</div>`)[0];
+                popup_f9751756a824b24e18a8d2747f6e9f68.setContent(html_f3213788798f569d879816feca81455d);
+            
+        
+
+        marker_69a210c757a8a12f0a776093ac7fd844.bindPopup(popup_f9751756a824b24e18a8d2747f6e9f68)
+        ;
+
+        
+    
+    
+            marker_69a210c757a8a12f0a776093ac7fd844.bindTooltip(
+                `<div>
+                     图书馆
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69a210c757a8a12f0a776093ac7fd844.setIcon(icon_a936f8c06fbbcf39f884b3dc6d691d80);
+            
+    
+            var marker_fa5623abff1ed2c2ae01ffdea091b347 = L.marker(
+                [34.4, 113.73],
+                {
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var icon_a4d7af16c3308c48ac6ff22d7e8f00d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33bd815ac1387f7ef83c7849cf22fbdf = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c5bb370a264aa096d96b9df9126d7a6a = $(`<div id="html_c5bb370a264aa096d96b9df9126d7a6a" style="width: 100.0%; height: 100.0%;"><b>行政管理中心</b> <span style='color:gray'>(Administration Center)</span><br>类别：地标<br>坐标：34.40000, 113.73000<br>负责学校日常运营和管理事务的中心。</div>`)[0];
+                popup_33bd815ac1387f7ef83c7849cf22fbdf.setContent(html_c5bb370a264aa096d96b9df9126d7a6a);
+            
+        
+
+        marker_fa5623abff1ed2c2ae01ffdea091b347.bindPopup(popup_33bd815ac1387f7ef83c7849cf22fbdf)
+        ;
+
+        
+    
+    
+            marker_fa5623abff1ed2c2ae01ffdea091b347.bindTooltip(
+                `<div>
+                     行政管理中心
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa5623abff1ed2c2ae01ffdea091b347.setIcon(icon_a4d7af16c3308c48ac6ff22d7e8f00d5);
+            
+    
+            var marker_a85f3bfbd32b14ea31e1bc9d29d832ea = L.marker(
+                [34.398, 113.738],
+                {
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var icon_38ae6192b375dc961aa6bbe5b786b889 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81e7131a34b83d5845f7b72e5e4710f5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_921f5429f3743b11f11c810100fd7322 = $(`<div id="html_921f5429f3743b11f11c810100fd7322" style="width: 100.0%; height: 100.0%;"><b>学生食堂</b> <span style='color:gray'>(Student Cafeteria)</span><br>类别：生活<br>坐标：34.39800, 113.73800<br>提供便捷的用餐服务，是学生社交的场所。</div>`)[0];
+                popup_81e7131a34b83d5845f7b72e5e4710f5.setContent(html_921f5429f3743b11f11c810100fd7322);
+            
+        
+
+        marker_a85f3bfbd32b14ea31e1bc9d29d832ea.bindPopup(popup_81e7131a34b83d5845f7b72e5e4710f5)
+        ;
+
+        
+    
+    
+            marker_a85f3bfbd32b14ea31e1bc9d29d832ea.bindTooltip(
+                `<div>
+                     学生食堂
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a85f3bfbd32b14ea31e1bc9d29d832ea.setIcon(icon_38ae6192b375dc961aa6bbe5b786b889);
+            
+    
+            var marker_c8220c05950f39cecffe696f694bd885 = L.marker(
+                [34.408, 113.73],
+                {
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var icon_888b951d70cdf6b6f4163e4f2862c944 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92bf87911e8ceffdabe58989d7bdb0c4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ae970c3e90310bc8fbb800b1a6d4e42a = $(`<div id="html_ae970c3e90310bc8fbb800b1a6d4e42a" style="width: 100.0%; height: 100.0%;"><b>体育活动中心</b> <span style='color:gray'>(Sports Center)</span><br>类别：体育<br>坐标：34.40800, 113.73000<br>供学生进行运动锻炼和体育竞赛的设施。</div>`)[0];
+                popup_92bf87911e8ceffdabe58989d7bdb0c4.setContent(html_ae970c3e90310bc8fbb800b1a6d4e42a);
+            
+        
+
+        marker_c8220c05950f39cecffe696f694bd885.bindPopup(popup_92bf87911e8ceffdabe58989d7bdb0c4)
+        ;
+
+        
+    
+    
+            marker_c8220c05950f39cecffe696f694bd885.bindTooltip(
+                `<div>
+                     体育活动中心
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8220c05950f39cecffe696f694bd885.setIcon(icon_888b951d70cdf6b6f4163e4f2862c944);
+            
+    
+            var marker_9a98ef7ac2cd80bbca70cd54f0b5c7a0 = L.marker(
+                [34.401, 113.731],
+                {
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var icon_c76092c9607e256e772e318a5153631a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2195feb31b69ebeadb9090f0e815b05 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_7d4a6fd1dbf8f2f225062c2fafa8a73f = $(`<div id="html_7d4a6fd1dbf8f2f225062c2fafa8a73f" style="width: 100.0%; height: 100.0%;"><b>校园内部主干道</b> <span style='color:gray'>(Campus Main Avenue)</span><br>类别：地标<br>坐标：34.40100, 113.73100<br>连接各个教学和生活区域的主要交通通道。</div>`)[0];
+                popup_f2195feb31b69ebeadb9090f0e815b05.setContent(html_7d4a6fd1dbf8f2f225062c2fafa8a73f);
+            
+        
+
+        marker_9a98ef7ac2cd80bbca70cd54f0b5c7a0.bindPopup(popup_f2195feb31b69ebeadb9090f0e815b05)
+        ;
+
+        
+    
+    
+            marker_9a98ef7ac2cd80bbca70cd54f0b5c7a0.bindTooltip(
+                `<div>
+                     校园内部主干道
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a98ef7ac2cd80bbca70cd54f0b5c7a0.setIcon(icon_c76092c9607e256e772e318a5153631a);
+            
+    
+            var marker_1eeba10d9152673909e6259b019051ea = L.marker(
+                [34.395, 113.74],
+                {
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var icon_815e732fdb71d6cc73736fe1939190a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c01b3c4e5df5884c129d2042cd20e32e = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_56c636bffbeeefb9d667ea60db79bea4 = $(`<div id="html_56c636bffbeeefb9d667ea60db79bea4" style="width: 100.0%; height: 100.0%;"><b>周边公交站点</b> <span style='color:gray'>(Nearby Bus Stop)</span><br>类别：生活<br>坐标：34.39500, 113.74000<br>连接校园与外部社区的公共交通站点。</div>`)[0];
+                popup_c01b3c4e5df5884c129d2042cd20e32e.setContent(html_56c636bffbeeefb9d667ea60db79bea4);
+            
+        
+
+        marker_1eeba10d9152673909e6259b019051ea.bindPopup(popup_c01b3c4e5df5884c129d2042cd20e32e)
+        ;
+
+        
+    
+    
+            marker_1eeba10d9152673909e6259b019051ea.bindTooltip(
+                `<div>
+                     周边公交站点
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1eeba10d9152673909e6259b019051ea.setIcon(icon_815e732fdb71d6cc73736fe1939190a9);
+            
+    
+            var marker_b7b542be5034f44c89e33eb65d177eec = L.marker(
+                [34.39, 113.725],
+                {
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+        
+    
+            var icon_860976d7773fc049a7edf8a31aae3e0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6ec95fdd285f877d18cf9ea3b88a010 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_70f937838e7c19489609b749ea64df46 = $(`<div id="html_70f937838e7c19489609b749ea64df46" style="width: 100.0%; height: 100.0%;"><b>附近商业街区</b> <span style='color:gray'>(Local Commercial Street)</span><br>类别：生活<br>坐标：34.39000, 113.72500<br>周边提供购物、餐饮和休闲服务的商业区。</div>`)[0];
+                popup_a6ec95fdd285f877d18cf9ea3b88a010.setContent(html_70f937838e7c19489609b749ea64df46);
+            
+        
+
+        marker_b7b542be5034f44c89e33eb65d177eec.bindPopup(popup_a6ec95fdd285f877d18cf9ea3b88a010)
+        ;
+
+        
+    
+    
+            marker_b7b542be5034f44c89e33eb65d177eec.bindTooltip(
+                `<div>
+                     附近商业街区
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b7b542be5034f44c89e33eb65d177eec.setIcon(icon_860976d7773fc049a7edf8a31aae3e0c);
+            
+    
+            var layer_control_fc1aa17cbb5478911f32d710a5f0f347_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_07ac37a6c420b70dcc85e2c147664315,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_fc1aa17cbb5478911f32d710a5f0f347 = L.control.layers(
+                layer_control_fc1aa17cbb5478911f32d710a5f0f347_layers.base_layers,
+                layer_control_fc1aa17cbb5478911f32d710a5f0f347_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_5f200430720085cb5eef8547f12afd25);
+
+        
+</script>
+</html>
